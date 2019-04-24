@@ -1,8 +1,6 @@
 <?php
     #-------------------------------------------------------------------------------
-    #           Santiago Rivera
-    #               Hw - 4
-    #              4/13/2019
+    #          This page can become front page after logging in
     #-------------------------------------------------------------------------------
 
     $dsn = 'mysql:host=localhost;dbname=FinalProject';
@@ -47,9 +45,20 @@
         session_start(); 
         $_SESSION['is_valid_user'] = true;
         $_SESSION['userEmail'] = $User_Email;
-        $_SESSION['userType'] = $User_Type; 
+        $_SESSION['userType'] = $User_Type;
+        $_SESSION['userName'] = $Name;
+
+        if ($_SESSION['userType'] == 'Admin') {
+              # code...
+            header("Location:admin.php");
+          }
+        else{
+           header("Location:client.php"); 
+        }
+        
+
         ?>
-        <h1>Good job! <?php echo $Name." ".$Last_Name; ?>, Successfully login!!</h1>
+    
 <?php }
     else {
         header("Location:.?error=1");

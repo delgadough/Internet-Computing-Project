@@ -134,6 +134,46 @@
 		color: black;
 	}
 
+/*-------------------------------------------------------------------------------------------*/
+/*					For Nav	*/
+/*-------------------------------------------------------------------------------------------*/
+	nav{
+			font-weight: bold;
+			background-color: #282929;
+			text-align: center;
+			width: 10em;
+			font-size: 150%;
+			padding: 6px;
+			border-radius: 30px;
+
+		}
+
+	nav ul{
+			display: none;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+	}
+
+	nav:hover{display: block;
+			background-color: #B3A211;}
+
+	a{
+		text-decoration: none;
+		color: white;
+
+	}
+	a:hover{
+		color: black;
+		text-decoration: underline overline;
+
+
+	}
+
+
+
+
 
 
 	

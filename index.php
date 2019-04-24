@@ -61,8 +61,5 @@
 		<p class="error"><?php echo $msg; ?></p>
 
 
-
-	
-
 </body>
 </html>
